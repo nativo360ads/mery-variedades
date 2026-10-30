@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mery Variedades | Cosméticos e Maquiagem no Centro de São Luís – MA</title>
+<meta name="description" content="Mery Variedades: loja de cosméticos, maquiagem e acessórios no Centro de São Luís – MA. Duas lojas, na Rua do Passeio e na Rua da Paz. Varejo e atacado, com entrega em São Luís.">
+<meta property="og:title" content="Mery Variedades | Cosméticos e maquiagem no Centro de São Luís">
+<meta property="og:description" content="Hidratantes, body splash, maquiagem, kits capilares, esmaltes e mais. Varejo e atacado no Centro de São Luís.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Figtree:wght@400;500;600;700&display=swap">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Store",
+      "name": "Mery Variedades 1",
+      "description": "Loja de cosméticos, maquiagem e acessórios no Centro de São Luís. Varejo e atacado.",
+      "telephone": "+55 98 98562-8982",
+      "address": {"@type": "PostalAddress", "streetAddress": "Rua do Passeio, 12", "addressLocality": "São Luís", "addressRegion": "MA", "postalCode": "65010-000", "addressCountry": "BR"},
+      "geo": {"@type": "GeoCoordinates", "latitude": -2.5301546, "longitude": -44.2963453},
+      "sameAs": ["https://www.instagram.com/mery.variedades/"]
+    },
+    {
+      "@type": "Store",
+      "name": "Mery Variedades 2",
+      "description": "Loja de cosméticos, maquiagem e acessórios no Centro de São Luís. Varejo e atacado.",
+      "telephone": "+55 98 98562-8982",
+      "address": {"@type": "PostalAddress", "streetAddress": "Rua da Paz, 651", "addressLocality": "São Luís", "addressRegion": "MA", "addressCountry": "BR"},
+      "sameAs": ["https://www.instagram.com/mery.variedades/"]
+    }
+  ]
+}
+</script>
+<style>
+/* Layout: vitrine de loja do Centro. Topo com a fachada sob toldo recortado (o recorte da logo), prateleira de categorias, faixa de atacado, as duas lojas lado a lado. Visual único, claro, como a loja. */
+:root {
+  --porcelana: #ffffff;   /* fundo, como as artes */
+  --blush: #fbeff1;       /* faixas alternadas, tom das toucas e sabonetes */
+  --cacau: #34201a;       /* texto */
+  --cacau-suave: #6f564b; /* texto secundário */
+  --ouro: #a8641a;        /* destaque, tirado do dourado das artes (escurecido p/ contraste) */
+  --ouro-claro: #e8c27c;  /* brilhos, linhas */
+  --whats: #1f8f4e;       /* só no botão de WhatsApp */
+  --f-display: "Marcellus", "Cormorant Garamond", Georgia, serif;
+  --f-texto: "Figtree", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --gutter-l: max(16px, env(safe-area-inset-left, 0px));
+  --gutter-r: max(16px, env(safe-area-inset-right, 0px));
+  --largura: 1160px;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation: none !important; transition: none !important; } }
+body { margin: 0; background: var(--porcelana); color: var(--cacau); font-family: var(--f-texto); font-size: 17px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--ouro); outline-offset: 3px; border-radius: 4px; }
+
+.faixa { padding-left: var(--gutter-l); padding-right: var(--gutter-r); }
+.miolo { max-width: var(--largura); margin-inline: auto; }
+
+h1, h2, h3 { font-family: var(--f-display); font-weight: 400; line-height: 1.12; text-wrap: balance; margin: 0; color: var(--cacau); }
+h1 { font-size: clamp(2.3rem, 5.2vw, 3.9rem); letter-spacing: -0.005em; }
+h2 { font-size: clamp(1.9rem, 3.6vw, 2.7rem); }
+h3 { font-size: 1.35rem; }
+p { margin: 0; }
+
+/* Botões */
+.botao { display: inline-flex; align-items: center; gap: .5rem; padding: .8rem 1.15rem; border-radius: 999px; font-weight: 600; font-size: 1rem; text-decoration: none; border: 2px solid transparent; transition: background-color .15s, color .15s, border-color .15s; }
+.botao svg { width: 1.2em; height: 1.2em; flex: none; }
+.botao-whats { background: var(--whats); color: #fff; }
+.botao-whats:hover { background: #17733e; }
+.botao-linha { border-color: var(--ouro); color: var(--ouro); background: transparent; }
+.botao-linha:hover { background: var(--ouro); color: #fff; }
+
+/* Cabeçalho */
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--porcelana); }
+.topo { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 9; background: rgba(255,255,255,.94); backdrop-filter: blur(8px); border-bottom: 1px solid #f0e2d0; }
+.topo .miolo { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: .55rem; }
+.marca { display: flex; align-items: center; gap: .7rem; text-decoration: none; }
+.marca img { width: 64px; height: auto; }
+.marca span { font-family: var(--f-display); font-size: 1.3rem; color: var(--cacau); }
+.menu { display: flex; align-items: center; gap: 1.4rem; font-size: .97rem; }
+.menu a { text-decoration: none; color: var(--cacau-suave); }
+.menu a:hover { color: var(--ouro); }
+.menu .botao { padding: .55rem 1rem; font-size: .93rem; color: #fff; }
+@media (max-width: 760px) { .menu a:not(.botao) { display: none; } .marca span { display: none; } }
+
+/* Topo da página com a fachada */
+.abertura { padding-block: clamp(2rem, 4vw, 3.2rem) clamp(2.5rem, 5vw, 4rem); }
+.abertura .miolo { display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: center; }
+.abertura .texto { display: grid; gap: 1.4rem; min-width: 0; }
+.abertura .lead { font-size: 1.15rem; color: var(--cacau-suave); max-width: 34rem; }
+.abertura .acoes { display: flex; flex-wrap: wrap; gap: .8rem; }
+.foto-hero { position: relative; justify-self: center; width: min(100%, 370px); }
+.foto-hero::before { content: ""; position: absolute; inset: -14px; border: 2px solid var(--ouro-claro); border-radius: 999px 999px 34px 34px; }
+.foto-hero img { position: relative; width: 100%; height: auto; object-fit: cover; border-radius: 999px 999px 26px 26px; box-shadow: 0 22px 40px rgba(120, 72, 20, .16); }
+.botao-insta { border-color: var(--cacau); color: var(--cacau); background: transparent; }
+.botao-insta:hover { background: var(--cacau); color: #fff; }
+.botao-linha svg { color: currentColor; }
+@media (max-width: 860px) { .abertura .miolo { grid-template-columns: 1fr; } .foto-hero { width: min(100% - 28px, 340px); } }
+
+/* Toldo: a abertura da fachada desce uma vez */
+@keyframes toldo { from { transform: scaleY(.15); } to { transform: scaleY(1); } }
+.toldo-anim { transform-origin: 50% 0; transform-box: fill-box; animation: toldo .9s cubic-bezier(.2,.8,.2,1) .15s both; }
+
+/* Categorias */
+.produtos { padding-block: clamp(3rem, 7vw, 5.5rem); background: var(--blush); }
+.cabeca-secao { display: grid; gap: .7rem; margin-bottom: clamp(2rem, 4vw, 3rem); max-width: 42rem; }
+.cabeca-secao p { color: var(--cacau-suave); }
+.prateleira { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr)); gap: clamp(1rem, 2.4vw, 1.6rem); }
+.item { display: grid; grid-template-rows: auto 1fr auto; gap: .75rem; background: var(--porcelana); border-radius: 18px; padding: .75rem .75rem 1.1rem; min-width: 0; }
+.item .foto { border-radius: 12px; overflow: hidden; aspect-ratio: 1 / 1; background: #fff; }
+.item .foto img { width: 100%; height: 100%; object-fit: cover; }
+.item .info { display: grid; gap: .3rem; padding-inline: .3rem; align-content: start; }
+.item h3 { font-size: 1.22rem; }
+.item p { font-size: .93rem; color: var(--cacau-suave); line-height: 1.45; }
+.item a { margin-inline: .3rem; justify-self: start; display: inline-flex; align-items: center; gap: .4rem; font-weight: 600; font-size: .93rem; color: var(--whats); text-decoration: none; }
+.item a:hover { text-decoration: underline; }
+.item a svg { width: 1.1em; height: 1.1em; }
+
+/* Atacado */
+.atacado { padding-block: clamp(3rem, 7vw, 5rem); }
+.atacado .miolo { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
+.atacado .texto { display: grid; gap: 1.1rem; min-width: 0; }
+.atacado .texto p { color: var(--cacau-suave); max-width: 34rem; }
+.publicos { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--ouro-claro); border: 1px solid var(--ouro-claro); border-radius: 16px; overflow: hidden; }
+.publicos li { background: var(--porcelana); padding: 1.3rem 1.2rem; display: grid; gap: .25rem; }
+.publicos strong { font-family: var(--f-display); font-weight: 400; font-size: 1.25rem; }
+.publicos span { font-size: .92rem; color: var(--cacau-suave); }
+@media (max-width: 860px) { .atacado .miolo { grid-template-columns: 1fr; } }
+@media (max-width: 420px) { .publicos { grid-template-columns: 1fr; } }
+
+/* Lojas */
+.lojas { padding-block: clamp(3rem, 7vw, 5.5rem); background: var(--blush); }
+.lojas-grade { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.2rem, 3vw, 2rem); }
+.loja { background: var(--porcelana); border-radius: 22px; overflow: hidden; display: grid; grid-template-rows: auto 1fr; min-width: 0; }
+.loja .fachada-mini { background: linear-gradient(#fff, #fdf6ee); padding: 1.2rem 1.2rem 0; }
+.loja .fachada-mini svg { width: 100%; height: auto; display: block; max-height: 260px; }
+.loja .dados { padding: 1.4rem 1.5rem 1.6rem; display: grid; gap: .9rem; align-content: start; }
+.loja address { font-style: normal; font-size: 1.05rem; }
+.loja .linha { display: flex; gap: .55rem; align-items: flex-start; color: var(--cacau-suave); font-size: .97rem; }
+.loja .linha svg { width: 1.1em; height: 1.1em; margin-top: .25em; color: var(--ouro); flex: none; }
+.loja .acoes { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: .3rem; }
+.loja .botao { padding: .7rem 1.1rem; font-size: .95rem; }
+.loja .fachada-foto { padding: 0; background: none; overflow: hidden; }
+.loja .fachada-foto img { width: 100%; height: auto; aspect-ratio: 520 / 440; object-fit: cover; object-position: 50% 62%; transition: transform .5s cubic-bezier(.2,.8,.2,1); }
+.loja:hover .fachada-foto img { transform: scale(1.04); }
+.aviso-foto { font-size: .82rem; color: var(--cacau-suave); }
+@media (max-width: 760px) { .lojas-grade { grid-template-columns: 1fr; } }
+
+/* Rodapé */
+.rodape { padding-block: 2.6rem 2rem; background: var(--cacau); color: #f3e6da; }
+.rodape .miolo { display: grid; grid-template-columns: auto 1fr auto; gap: 1.5rem 3rem; align-items: start; }
+.rodape img { width: 92px; }
+.rodape h2 { color: #fff; font-size: 1.4rem; margin-bottom: .4rem; }
+.rodape p, .rodape a { font-size: .95rem; color: #e9d7c6; }
+.rodape a { text-decoration: none; }
+.rodape a:hover { color: var(--ouro-claro); }
+.rodape .colunas { display: flex; flex-wrap: wrap; gap: 1.2rem 3rem; }
+.rodape .colunas div { display: grid; gap: .25rem; }
+.rodape .seo { grid-column: 1 / -1; border-top: 1px solid rgba(232,194,124,.25); padding-top: 1.2rem; font-size: .85rem; color: #c9b4a2; max-width: 60rem; }
+@media (max-width: 760px) { .rodape .miolo { grid-template-columns: 1fr; } }
+
+/* WhatsApp flutuante */
+.whats-flutuante { position: fixed; right: calc(18px + env(safe-area-inset-right, 0px)); bottom: calc(18px + env(safe-area-inset-bottom, 0px)); z-index: 20; width: 58px; height: 58px; border-radius: 50%; background: var(--whats); color: #fff; display: grid; place-items: center; box-shadow: 0 8px 22px rgba(31,143,78,.35); }
+.whats-flutuante svg { width: 30px; height: 30px; }
+.whats-flutuante:hover { background: #17733e; }
+
+/* ===== Animações ===== */
+@keyframes sobe { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
+@keyframes revela { from { clip-path: inset(100% 0 0 0 round 999px 999px 26px 26px); transform: scale(1.04); } to { clip-path: inset(0 0 0 0 round 999px 999px 26px 26px); transform: none; } }
+@keyframes aro { from { opacity: 0; transform: scale(.94); } to { opacity: 1; transform: none; } }
+@keyframes brilho { 0%, 100% { opacity: .55; } 50% { opacity: 1; } }
+@keyframes pulso { 0% { box-shadow: 0 0 0 0 rgba(31,143,78,.45); } 70% { box-shadow: 0 0 0 16px rgba(31,143,78,0); } 100% { box-shadow: 0 0 0 0 rgba(31,143,78,0); } }
+@keyframes flutua { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+
+/* Abertura: entrada em sequência na carga da página */
+.abertura .texto > * { animation: sobe .8s cubic-bezier(.2,.8,.2,1) both; }
+.abertura .texto > :nth-child(1) { animation-delay: .1s; }
+.abertura .texto > :nth-child(2) { animation-delay: .25s; }
+.abertura .texto > :nth-child(3) { animation-delay: .4s; }
+.foto-hero img { animation: revela 1.1s cubic-bezier(.2,.8,.2,1) .2s both; }
+.foto-hero::before { animation: aro 1s ease-out .7s both, brilho 4s ease-in-out 1.8s infinite; }
+.foto-hero .selo { position: absolute; left: -26px; bottom: 34px; width: 108px; height: auto; filter: drop-shadow(0 10px 18px rgba(120,72,20,.25)); animation: aro .8s ease-out 1.1s both, flutua 5s ease-in-out 2s infinite; }
+@media (max-width: 860px) { .foto-hero .selo { width: 84px; left: -12px; } }
+
+/* Ao rolar: blocos sobem de leve (só em navegadores com scroll-driven animations; nunca ficam invisíveis) */
+@supports (animation-timeline: view()) {
+  @keyframes entra { from { opacity: .35; transform: translateY(36px) scale(.98); } to { opacity: 1; transform: none; } }
+  .item, .cabeca-secao, .publicos li, .loja, .atacado .texto { animation: entra linear both; animation-timeline: view(); animation-range: entry 0% entry 70%; }
+}
+
+/* Interações */
+.item { transition: transform .25s ease, box-shadow .25s ease; }
+.item .foto img { transition: transform .5s cubic-bezier(.2,.8,.2,1); }
+.item:hover { transform: translateY(-6px); box-shadow: 0 16px 30px rgba(120,72,20,.14); }
+.item:hover .foto img { transform: scale(1.07); }
+.botao { transition: background-color .15s, color .15s, border-color .15s, transform .15s; }
+.botao:hover { transform: translateY(-2px); }
+.loja .fachada-mini svg { transition: transform .4s ease; }
+.loja:hover .fachada-mini svg { transform: scale(1.03); }
+.publicos li { transition: background-color .2s; }
+.publicos li:hover { background: var(--blush); }
+.whats-flutuante { animation: pulso 2.6s ease-out 2s infinite; transition: transform .15s; }
+.whats-flutuante:hover { transform: scale(1.08); }
+</style>
+
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-whats" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2Zm5.8 14.08c-.25.69-1.44 1.32-1.98 1.37-.51.05-1 .24-3.37-.7-2.84-1.12-4.65-4.02-4.79-4.21-.14-.19-1.15-1.53-1.15-2.92s.73-2.07.99-2.35c.26-.28.56-.35.75-.35l.54.01c.17.01.4-.07.63.48.25.58.83 2.01.9 2.16.07.14.12.31.02.5-.09.19-.14.31-.28.47-.14.17-.3.37-.42.5-.14.14-.29.29-.12.57.17.28.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.29 1.42.28.14.45.12.61-.07.17-.19.71-.83.9-1.11.19-.28.38-.24.63-.14.26.09 1.65.78 1.93.92.28.14.47.21.54.33.07.12.07.69-.17 1.37Z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></symbol>
+    <symbol id="i-tel" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8Z"/></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><path fill="currentColor" d="M12 7.3A4.7 4.7 0 1 0 12 16.7 4.7 4.7 0 0 0 12 7.3Zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm6-7.9a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0ZM21.9 8.2c-.06-1.5-.4-2.83-1.5-3.92S18 2.84 16.5 2.77C14.96 2.68 9.04 2.68 7.5 2.77 6 2.84 4.67 3.18 3.58 4.27S2.15 6.7 2.08 8.2c-.09 1.55-.09 7.47 0 9.01.07 1.5.41 2.83 1.5 3.92s2.42 1.43 3.92 1.5c1.54.09 7.46.09 9 0 1.5-.07 2.83-.41 3.92-1.5s1.43-2.42 1.5-3.92c.09-1.54.09-7.46 0-9Zm-2 10.8a3 3 0 0 1-1.7 1.7c-1.17.47-3.95.36-5.24.36s-4.08.1-5.24-.36A3 3 0 0 1 6 19c-.46-1.17-.36-3.95-.36-5.24s-.1-4.08.36-5.24A3 3 0 0 1 7.7 6.8c1.17-.46 3.95-.36 5.24-.36s4.08-.1 5.24.36A3 3 0 0 1 19.9 8.5c.47 1.17.36 3.95.36 5.24s.11 4.08-.36 5.25Z"/></symbol>
+
+    <!-- Fachada ilustrativa: trocar por foto real das lojas (assets/fachada-loja1.jpg / fachada-loja2.jpg) -->
+    <symbol id="fachada" viewBox="0 0 520 440">
+      <rect x="20" y="40" width="480" height="390" rx="6" fill="#fdf8f2"/>
+      <rect x="20" y="40" width="480" height="390" rx="6" fill="none" stroke="#e8c27c" stroke-width="2"/>
+      <!-- letreiro -->
+      <rect x="60" y="62" width="400" height="66" rx="33" fill="#34201a"/>
+      <text x="260" y="105" text-anchor="middle" font-family="Marcellus, Georgia, serif" font-size="32" fill="#e8c27c" letter-spacing="1">Mery Variedades</text>
+      <!-- toldo listrado com borda recortada (o recorte da logo) -->
+      <g class="toldo-anim">
+        <rect x="30" y="146" width="460" height="46" fill="#a8641a"/>
+        <g fill="#fff">
+          <rect x="76" y="146" width="46" height="46"/><rect x="168" y="146" width="46" height="46"/><rect x="260" y="146" width="46" height="46"/><rect x="352" y="146" width="46" height="46"/><rect x="444" y="146" width="46" height="46"/>
+        </g>
+        <g fill="#a8641a">
+          <circle cx="53" cy="192" r="23"/><circle cx="145" cy="192" r="23"/><circle cx="237" cy="192" r="23"/><circle cx="329" cy="192" r="23"/><circle cx="421" cy="192" r="23"/>
+        </g>
+        <g fill="#fff">
+          <circle cx="99" cy="192" r="23"/><circle cx="191" cy="192" r="23"/><circle cx="283" cy="192" r="23"/><circle cx="375" cy="192" r="23"/><circle cx="467" cy="192" r="23"/>
+        </g>
+      </g>
+      <!-- vitrine esquerda -->
+      <rect x="48" y="236" width="150" height="176" rx="6" fill="#fbeff1" stroke="#e8c27c" stroke-width="2"/>
+      <line x1="56" y1="292" x2="190" y2="292" stroke="#e8c27c" stroke-width="3"/>
+      <line x1="56" y1="352" x2="190" y2="352" stroke="#e8c27c" stroke-width="3"/>
+      <g>
+        <rect x="66" y="262" width="14" height="30" rx="3" fill="#d4365a"/><rect x="69" y="254" width="8" height="9" fill="#fff" stroke="#ddd"/>
+        <rect x="88" y="262" width="14" height="30" rx="3" fill="#f06aa0"/><rect x="91" y="254" width="8" height="9" fill="#fff" stroke="#ddd"/>
+        <rect x="110" y="262" width="14" height="30" rx="3" fill="#127a6a"/><rect x="113" y="254" width="8" height="9" fill="#fff" stroke="#ddd"/>
+        <rect x="132" y="262" width="14" height="30" rx="3" fill="#c98b80"/><rect x="135" y="254" width="8" height="9" fill="#fff" stroke="#ddd"/>
+        <rect x="154" y="262" width="14" height="30" rx="3" fill="#6fa8d6"/><rect x="157" y="254" width="8" height="9" fill="#fff" stroke="#ddd"/>
+        <rect x="70" y="316" width="24" height="36" rx="5" fill="#fff" stroke="#e2cfc0"/><rect x="77" y="306" width="10" height="11" fill="#e8c27c"/>
+        <rect x="104" y="322" width="30" height="30" rx="4" fill="#f5c9d3"/>
+        <rect x="144" y="314" width="22" height="38" rx="6" fill="#e9a6c4"/><rect x="150" y="306" width="10" height="9" fill="#a8641a"/>
+      </g>
+      <!-- porta -->
+      <rect x="216" y="236" width="88" height="194" rx="44" fill="#fff" stroke="#a8641a" stroke-width="3"/>
+      <line x1="260" y1="246" x2="260" y2="430" stroke="#e8c27c" stroke-width="2"/>
+      <circle cx="250" cy="340" r="4" fill="#a8641a"/><circle cx="270" cy="340" r="4" fill="#a8641a"/>
+      <text x="260" y="300" text-anchor="middle" font-family="Figtree, Arial, sans-serif" font-size="13" font-weight="700" fill="#a8641a">ABERTO</text>
+      <!-- vitrine direita -->
+      <rect x="322" y="236" width="150" height="176" rx="6" fill="#fbeff1" stroke="#e8c27c" stroke-width="2"/>
+      <line x1="330" y1="292" x2="464" y2="292" stroke="#e8c27c" stroke-width="3"/>
+      <line x1="330" y1="352" x2="464" y2="352" stroke="#e8c27c" stroke-width="3"/>
+      <g>
+        <rect x="338" y="258" width="20" height="34" rx="4" fill="#f2a7b8"/><rect x="343" y="250" width="10" height="9" fill="#d9a441"/>
+        <rect x="366" y="254" width="20" height="38" rx="4" fill="#c7a6e0"/><rect x="371" y="246" width="10" height="9" fill="#d9a441"/>
+        <rect x="394" y="260" width="20" height="32" rx="4" fill="#f4c27a"/><rect x="399" y="252" width="10" height="9" fill="#d9a441"/>
+        <rect x="422" y="256" width="20" height="36" rx="4" fill="#9fd3c7"/><rect x="427" y="248" width="10" height="9" fill="#d9a441"/>
+        <ellipse cx="364" cy="336" rx="26" ry="16" fill="#e98aa6"/><ellipse cx="364" cy="330" rx="26" ry="12" fill="#f3b1c4"/>
+        <rect x="402" y="318" width="50" height="34" rx="4" fill="#34201a"/><circle cx="414" cy="330" r="5" fill="#c98b80"/><circle cx="427" cy="330" r="5" fill="#a8641a"/><circle cx="440" cy="330" r="5" fill="#e98aa6"/><circle cx="414" cy="342" r="5" fill="#8a5a44"/><circle cx="427" cy="342" r="5" fill="#f4c27a"/><circle cx="440" cy="342" r="5" fill="#d4365a"/>
+      </g>
+      <!-- calçada -->
+      <rect x="0" y="426" width="520" height="14" rx="3" fill="#ead9c6"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="topo faixa">
+  <div class="miolo">
+    <a class="marca" href="#inicio" aria-label="Mery Variedades, início">
+      <img src="assets/logo-mv.png" alt="Logo MV Variedades" width="120" height="120">
+      <span>Mery Variedades</span>
+    </a>
+    <nav class="menu" aria-label="Seções">
+      <a href="#produtos">Produtos</a>
+      <a href="#atacado">Atacado</a>
+      <a href="#lojas">Nossas lojas</a>
+      <a class="botao botao-whats" href="https://wa.me/5598985628982?text=Ol%C3%A1!%20Vi%20o%20site%20da%20Mery%20Variedades%20e%20quero%20fazer%20um%20pedido." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-whats"/></svg>WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="abertura faixa" aria-labelledby="titulo">
+    <div class="miolo">
+      <div class="texto">
+        <h1 id="titulo">Cosméticos, maquiagem e acessórios no Centro de São Luís</h1>
+        <p class="lead">Duas lojas no Centro, com preço baixo no varejo e no atacado. Escolha aqui, chame no WhatsApp e retire na loja ou receba em casa.</p>
+        <div class="acoes">
+          <a class="botao botao-whats" href="https://wa.me/5598985628982?text=Ol%C3%A1!%20Vi%20o%20site%20da%20Mery%20Variedades%20e%20quero%20fazer%20um%20pedido." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-whats"/></svg>Pedir pelo WhatsApp</a>
+          <a class="botao botao-linha" href="#lojas"><svg aria-hidden="true"><use href="#i-pin"/></svg>Nossas lojas</a>
+          <a class="botao botao-insta" href="https://www.instagram.com/mery.variedades/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-insta"/></svg>Instagram</a>
+        </div>
+      </div>
+      <div class="foto-hero">
+        <img src="assets/hero-mulher.webp" alt="Mulher aplicando gloss, com base, batom e paleta de sombras da Mery Variedades" width="724" height="1016" fetchpriority="high">
+        <img class="selo" src="assets/logo-mv.png" alt="" width="120" height="120">
+      </div>
+    </div>
+  </section>
+
+  <section class="produtos faixa" id="produtos" aria-labelledby="t-produtos">
+    <div class="miolo">
+      <div class="cabeca-secao">
+        <h2 id="t-produtos">O que você encontra nas nossas lojas</h2>
+        <p>Toque em "Pedir no WhatsApp" e a mensagem já vai com o nome do produto. A gente responde com as opções, cores e preços do dia.</p>
+      </div>
+      <ul class="prateleira">
+        <li class="item">
+          <div class="foto"><img src="assets/hidratante-corporal.webp" alt="Hidratantes corporais na Mery Variedades, Centro de São Luís" loading="lazy" width="720" height="612"></div>
+          <div class="info"><h3>Hidratantes corporais</h3><p>Pele macia e perfumada o dia todo, com várias fragrâncias.</p></div>
+          <a href="https://wa.me/5598985628982?text=Ol%C3%A1%21%20Vi%20no%20site%20da%20Mery%20Variedades%20e%20quero%20saber%20sobre%20hidratantes%20corporais." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-whats"/></svg>Pedir no WhatsApp</a>
+        </li>
+        <li class="item">
+          <div class="foto"><img src="assets/esfoliante-corporal-facial.webp" alt="Esfoliante corporal e facial na Mery Variedades, Centro de São Luís" loading="lazy" width="720" height="612"></div>
+          <div class="info"><h3>Esfoliante corporal e facial</h3><p>Remove células mortas e deixa a pele lisinha.</p></div>
+          <a href="https://wa.me/5598985628982?text=Ol%C3%A1%21%20Vi%20no%20site%20da%20Mery%20Variedades%20e%20quero%20saber%20sobre%20esfoliante%20corporal%20e%20facial." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-whats"/></svg>Pedir no WhatsApp</a>
+        </li>
+        <li class="item">
+          <div class="foto"><img src="assets/body-splash-colonia.webp" alt="Body splash e colônia na Mery Variedades, Centro de São Luís" loading="lazy" width="720" height="612"></div>
+          <div class="info"><h3>Body splash e colônia</h3><p>Fragrâncias leves para o calor da Ilha.</p></div>
+          <a href="https://wa.me/5598985628982?text=Ol%C3%A1%21%20Vi%20no%20site%20da%20Mery%20Variedades%20e%20quero%20saber%20sobre%20body%20splash%20e%20col%C3%B4nia." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-whats"/></svg>Pedir no WhatsApp</a>
+        </li>
+        <li class="item">
+          <div class="foto"><img src="assets/sabonete-intimo.webp" alt="Sabonete íntimo na Mery Variedades, Centro de São Luís" loading="lazy" width="720" height="612"></div>
+          <div class="info"><h3>Sabonete íntimo</h3><p>Fórmula suave para a higiene de todo dia.</p></div>
+          <a href="https://wa.me/5598985628982?text=Ol%C3%A1%21%20Vi%20no%20site%20da%20Mery%20Variedades%20e%20quero%20saber%20sobre%20sabonete%20%C3%ADntimo." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-whats"/></svg>Pedir no WhatsApp</a>
+        </li>
+        <li class="item">
+          <div class="foto"><img src="assets/gel-massageador.webp" alt="Gel massageador na Mery Variedades, Centro de São Luís" loading="lazy" width="720" height="612"></div>
+          <div class="info"><h3>Gel massageador</h3><p>Efeito refrescante ou aquecido para relaxar.</p></div>
+          <a href="https://wa.me/5598985628982?text=Ol%C3%A1%21%20Vi%20no%20site%20da%20Mery%20Variedades%20e%20quero%20saber%20sobre%20gel%20massageador." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-whats"/></svg>Pedir no WhatsApp</a>
+        </li>
+        <li class="item">
+          <div class="foto"><img src="assets/touca-de-cetim.webp" alt="Touca de cetim na Mery Variedades, Centro de São Luís" loading="lazy" width="720" height="612"></div>
+          <div class="info"><h3>Touca de cetim</h3><p>Menos frizz e cachos preservados ao acordar.</p></div>
+          <a href="https://wa.me/5598985628982?text=Ol%C3%A1%21%20Vi%20no%20site%20da%20Mery%20Variedades%20e%20quero%20saber%20sobre%20touca%20de%20cetim." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-whats"/></svg>Pedir no WhatsApp</a>
+        </li>
+        <li class="item">
+          <div class="foto"><img src="assets/mousse-micelar.webp" alt="Mousse micelar na Mery Variedades, Centro de São Luís" loading="lazy" width="720" height="612"></div>
+          <div class="info"><h3>Mousse micelar</h3><p>Limpa o rosto e tira a maquiagem sem ressecar.</p></div>
+          <a href="https://wa.me/5598985628982?text=Ol%C3%A1%21%20Vi%20no%20site%20da%20Mery%20Variedades%20e%20quero%20saber%20sobre%20mousse%20micelar." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-whats"/></svg>Pedir no WhatsApp</a>
+        </li>
+        <li class="item">
+          <div class="foto"><img src="assets/maquiagem.webp" alt="Maquiagem na Mery Variedades, Centro de São Luís" loading="lazy" width="720" height="612"></div>
+          <div class="info"><h3>Maquiagem</h3><p>Base, pó, sombra, batom, gloss, pincéis e mais.</p></div>
+          <a href="https://wa.me/5598985628982?text=Ol%C3%A1%21%20Vi%20no%20site%20da%20Mery%20Variedades%20e%20quero%20saber%20sobre%20maquiagem." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-whats"/></svg>Pedir no WhatsApp</a>
+        </li>
+        <li class="item">
+          <div class="foto"><img src="assets/kit-capilar.webp" alt="Kits capilares na Mery Variedades, Centro de São Luís" loading="lazy" width="720" height="612"></div>
+          <div class="info"><h3>Kits capilares</h3><p>Shampoo, condicionador, máscara e finalizador.</p></div>
+          <a href="https://wa.me/5598985628982?text=Ol%C3%A1%21%20Vi%20no%20site%20da%20Mery%20Variedades%20e%20quero%20saber%20sobre%20kits%20capilares." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-whats"/></svg>Pedir no WhatsApp</a>
+        </li>
+        <li class="item">
+          <div class="foto"><img src="assets/esmaltes.webp" alt="Esmaltes na Mery Variedades, Centro de São Luís" loading="lazy" width="720" height="612"></div>
+          <div class="info"><h3>Esmaltes</h3><p>Cores da estação, base, top coat e acessórios.</p></div>
+          <a href="https://wa.me/5598985628982?text=Ol%C3%A1%21%20Vi%20no%20site%20da%20Mery%20Variedades%20e%20quero%20saber%20sobre%20esmaltes." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-whats"/></svg>Pedir no WhatsApp</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="atacado faixa" id="atacado" aria-labelledby="t-atacado">
+    <div class="miolo">
+      <div class="texto">
+        <h2 id="t-atacado">Compra para revender? Temos preço de atacado</h2>
+        <p>Atendemos revendedoras, maquiadoras, manicures e salões de São Luís. Peça a tabela de atacado pelo WhatsApp e monte seu pedido com as marcas e cores que mais saem.</p>
+        <div><a class="botao botao-whats" href="https://wa.me/5598985628982?text=Ol%C3%A1!%20Quero%20a%20tabela%20de%20atacado%20da%20Mery%20Variedades." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-whats"/></svg>Pedir tabela de atacado</a></div>
+      </div>
+      <ul class="publicos">
+        <li><strong>Revendedoras</strong><span>Kits e reposição para vender no seu bairro</span></li>
+        <li><strong>Maquiadoras</strong><span>Base, pó, paletas, pincéis e esponjas</span></li>
+        <li><strong>Manicures</strong><span>Esmaltes, base, top coat e acessórios</span></li>
+        <li><strong>Salões</strong><span>Kits capilares, toucas e finalizadores</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="lojas faixa" id="lojas" aria-labelledby="t-lojas">
+    <div class="miolo">
+      <div class="cabeca-secao">
+        <h2 id="t-lojas">Nossas lojas no Centro de São Luís</h2>
+        <p>As duas lojas ficam a poucos minutos a pé uma da outra. O WhatsApp é o mesmo para as duas.</p>
+      </div>
+      <div class="lojas-grade">
+        <article class="loja" aria-labelledby="loja1">
+          <div class="fachada-mini fachada-foto"><img src="assets/fachada-loja1.webp" alt="Fachada da Mery Variedades 1 na Rua do Passeio, Centro de São Luís, com prateleiras de cosméticos na entrada" width="900" height="1200" loading="lazy" style="object-position: 50% 42%"></div>
+          <div class="dados">
+            <h3 id="loja1">Mery Variedades 1</h3>
+            <div class="linha"><svg aria-hidden="true"><use href="#i-pin"/></svg><address>Rua do Passeio, 12 – Centro<br>São Luís – MA, 65010-000</address></div>
+            <div class="linha"><svg aria-hidden="true"><use href="#i-tel"/></svg><span>(98) 98562-8982</span></div>
+            <div class="acoes">
+              <a class="botao botao-linha" href="https://maps.app.goo.gl/qdkEZcuGYDHeHa5PA" target="_blank" rel="noopener">Abrir no Google Maps</a>
+              <a class="botao botao-whats" href="https://wa.me/5598985628982?text=Ol%C3%A1!%20Quero%20falar%20com%20a%20loja%20da%20Rua%20do%20Passeio." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-whats"/></svg>Chamar no WhatsApp</a>
+            </div>
+          </div>
+        </article>
+        <article class="loja" aria-labelledby="loja2">
+          <div class="fachada-mini fachada-foto"><img src="assets/fachada-loja2.webp" alt="Fachada laranja da Mery Variedades 2 na Rua da Paz, Centro de São Luís" width="900" height="1200" loading="lazy"></div>
+          <div class="dados">
+            <h3 id="loja2">Mery Variedades 2</h3>
+            <div class="linha"><svg aria-hidden="true"><use href="#i-pin"/></svg><address>Rua da Paz, 651 – Centro<br>São Luís – MA</address></div>
+            <div class="linha"><svg aria-hidden="true"><use href="#i-tel"/></svg><span>(98) 98562-8982</span></div>
+            <div class="acoes">
+              <a class="botao botao-linha" href="https://www.google.com/maps/search/?api=1&amp;query=Rua%20da%20Paz%2C%20651%2C%20Centro%2C%20S%C3%A3o%20Lu%C3%ADs%20-%20MA" target="_blank" rel="noopener">Abrir no Google Maps</a>
+              <a class="botao botao-whats" href="https://wa.me/5598985628982?text=Ol%C3%A1!%20Quero%20falar%20com%20a%20loja%20da%20Rua%20da%20Paz." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-whats"/></svg>Chamar no WhatsApp</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape faixa">
+  <div class="miolo">
+    <img src="assets/logo-mv.png" alt="" width="120" height="120">
+    <div class="colunas">
+      <div>
+        <h2>Mery Variedades</h2>
+        <p>Rua do Passeio, 12 – Centro</p>
+        <p>Rua da Paz, 651 – Centro</p>
+        <p>São Luís – MA</p>
+      </div>
+      <div>
+        <p>WhatsApp: (98) 98562-8982</p>
+        <a href="https://www.instagram.com/mery.variedades/" target="_blank" rel="noopener">Instagram @mery.variedades</a>
+        <p>Varejo e atacado</p>
+        <p>Entregamos em São Luís</p>
+      </div>
+    </div>
+    <p class="seo">Loja de cosméticos no Centro de São Luís – MA: hidratante corporal, esfoliante corporal e facial, body splash e colônia, sabonete íntimo, gel massageador, touca de cetim, mousse micelar, maquiagem, kit capilar e esmaltes, no varejo e no atacado.</p>
+  </div>
+</footer>
+
+<a class="whats-flutuante" href="https://wa.me/5598985628982?text=Ol%C3%A1!%20Vi%20o%20site%20da%20Mery%20Variedades%20e%20quero%20fazer%20um%20pedido." target="_blank" rel="noopener" aria-label="Falar com a Mery Variedades no WhatsApp"><svg aria-hidden="true"><use href="#i-whats"/></svg></a>
+
+
+</body>
+</html>
